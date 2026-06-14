@@ -158,3 +158,80 @@ p{
     border-radius:12px;
     font-weight:bold;
 }
+
+.kit-page{
+    max-width:1400px;
+    margin:140px auto 50px;
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:40px;
+    padding:0 40px;
+}
+
+.kit-sidebar{
+    background:#121a33;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+}
+
+.kit-sidebar img{
+    width:100%;
+    max-width:260px;
+}
+
+.kit-sidebar h1{
+    font-size:2.5rem;
+    margin-top:20px;
+}
+
+.kit-price{
+    font-size:2rem;
+    color:#ff7a00;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+.purchase-btn{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    background:#16a34a;
+    color:white;
+    font-size:1.1rem;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.kit-content{
+    background:#121a33;
+    border-radius:20px;
+    padding:30px;
+}
+
+.kit-preview{
+    width:100%;
+    border-radius:12px;
+}
+
+.kit-perks{
+    max-width:1400px;
+    margin:0 auto 80px;
+    background:#121a33;
+    border-radius:20px;
+    padding:40px;
+}
+
+.kit-perks h2{
+    margin-bottom:25px;
+}
+
+.kit-perks ul{
+    padding-left:25px;
+}
+
+.kit-perks li{
+    margin-bottom:15px;
+    font-size:1.1rem;
+}
