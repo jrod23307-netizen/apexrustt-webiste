@@ -10,6 +10,40 @@ body{
     font-family:Arial, sans-serif;
 }
 
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.nav-logo{
+    width:60px;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ff7a00;
+}
+
 .hero{
     min-height:100vh;
     display:flex;
@@ -36,10 +70,16 @@ p{
 }
 
 .btn{
-    background:#ff6a00;
+    background:#ff7a00;
     color:white;
     text-decoration:none;
     padding:15px 30px;
     border-radius:10px;
     font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    background:#ff8c1a;
 }
