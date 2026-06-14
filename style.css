@@ -5,9 +5,9 @@
 }
 
 body{
-    background:#0b1020;
+    background:#030b2a;
     color:white;
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .navbar{
@@ -30,7 +30,7 @@ body{
 
 .nav-links{
     display:flex;
-    gap:30px;
+    gap:35px;
 }
 
 .nav-links a{
@@ -56,78 +56,43 @@ body{
 
 .logo{
     width:250px;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 h1{
-    font-size:4rem;
-    margin-bottom:10px;
+    font-size:5rem;
+    margin-bottom:15px;
 }
 
-.hero p{
-    font-size:1.2rem;
-    margin-bottom:30px;
+p{
+    font-size:1.25rem;
+    color:#d5d9e5;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
 }
 
 .btn{
     background:#ff7a00;
     color:white;
     text-decoration:none;
-    padding:15px 30px;
-    border-radius:10px;
+    padding:15px 35px;
+    border-radius:12px;
     font-weight:bold;
-}
-
-.ranks-section{
-    padding:100px 80px;
-}
-
-.ranks-section h2{
-    text-align:center;
-    font-size:3rem;
-    margin-bottom:60px;
-}
-
-.rank-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
-
-.rank-card{
-    background:#121a33;
-    border-radius:20px;
-    padding:25px;
-    text-align:center;
     transition:.3s;
 }
 
-.rank-card:hover{
-    transform:translateY(-10px);
+.btn:hover{
+    transform:translateY(-3px);
 }
 
-.rank-card img{
-    width:100%;
-    max-width:280px;
+.secondary-btn{
+    background:#1f2937;
 }
 
-.rank-card h3{
-    margin-top:15px;
-    margin-bottom:10px;
-    font-size:2rem;
-}
-
-.rank-card p{
-    color:#bfc7dd;
-    margin-bottom:20px;
-}
-
-.rank-btn{
-    display:inline-block;
-    background:#ff7a00;
-    color:white;
-    text-decoration:none;
-    padding:12px 25px;
-    border-radius:10px;
-    font-weight:bold;
+.secondary-btn:hover{
+    background:#374151;
 }
