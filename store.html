@@ -9,56 +9,123 @@
 </head>
 <body>
 
-
 <nav class="navbar">
     <a href="index.html">
         <img src="images/logo.png" alt="Apex Rust" class="nav-logo">
     </a>
 
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="store.html">Store</a>
-        <a href="#">Discord</a>
-    </div>
+```
+<div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="store.html">Store</a>
+    <a href="#">Discord</a>
+</div>
+```
+
 </nav>
 
 <section class="store-header">
     <h1>Apex Rust Store</h1>
-    <p>Select a kit package to view contents and benefits.</p>
+    <p>Select a package to view contents and benefits.</p>
 </section>
 
-<section class="store-grid">
+<div class="store-tabs">
+    <button class="tab-btn active" onclick="showStore('monthly', this)">
+        Monthly Kits
+    </button>
 
-    <div class="store-card">
-        <img src="images/recruit-rank.png" alt="Recruit">
-        <h2>Recruit</h2>
-        <div class="price">$24.99</div>
-        <a href="recruit.html" class="view-btn">View</a>
-    </div>
+```
+<button class="tab-btn" onclick="showStore('lifetime', this)">
+    Lifetime Kits
+</button>
+```
 
-    <div class="store-card">
-        <img src="images/scout-rank.png" alt="Scout">
-        <h2>Scout</h2>
-        <div class="price">$49.99</div>
-        <a href="scout.html" class="view-btn">View</a>
-    </div>
+</div>
 
-    <div class="store-card">
-        <img src="images/elite-rank.png" alt="Elite">
-        <h2>Elite</h2>
-        <div class="price">$74.99</div>
-        <a href="elite.html" class="view-btn">View</a>
-    </div>
+<section id="monthly-store" class="store-grid">
 
-    <div class="store-card">
-        <img src="images/apex-rank.png" alt="Apex">
-        <h2>Apex</h2>
-        <div class="price">$100.00</div>
-        <a href="apex.html" class="view-btn">View</a>
-    </div>
+```
+<div class="store-card">
+    <img src="images/recruit-rank.png" alt="Recruit Monthly">
+    <h2>Recruit</h2>
+    <div class="price">$9.99/mo</div>
+    <a href="recruit-monthly" class="view-btn">View</a>
+</div>
+
+<div class="store-card">
+    <img src="images/scout-rank.png" alt="Scout Monthly">
+    <h2>Scout</h2>
+    <div class="price">$14.99/mo</div>
+    <a href="scout-monthly" class="view-btn">View</a>
+</div>
+
+<div class="store-card">
+    <img src="images/elite-rank.png" alt="Elite Monthly">
+    <h2>Elite</h2>
+    <div class="price">$19.99/mo</div>
+    <a href="elite-monthly" class="view-btn">View</a>
+</div>
+
+<div class="store-card">
+    <img src="images/apex-rank.png" alt="Apex Monthly">
+    <h2>Apex</h2>
+    <div class="price">$29.99/mo</div>
+    <a href="apex-monthly" class="view-btn">View</a>
+</div>
+```
 
 </section>
 
+<section id="lifetime-store" class="store-grid" style="display:none;">
+
+```
+<div class="store-card">
+    <img src="images/recruit-rank.png" alt="Recruit">
+    <h2>Recruit</h2>
+    <div class="price">$24.99</div>
+    <a href="recruit.html" class="view-btn">View</a>
+</div>
+
+<div class="store-card">
+    <img src="images/scout-rank.png" alt="Scout">
+    <h2>Scout</h2>
+    <div class="price">$49.99</div>
+    <a href="scout.html" class="view-btn">View</a>
+</div>
+
+<div class="store-card">
+    <img src="images/elite-rank.png" alt="Elite">
+    <h2>Elite</h2>
+    <div class="price">$74.99</div>
+    <a href="elite.html" class="view-btn">View</a>
+</div>
+
+<div class="store-card">
+    <img src="images/apex-rank.png" alt="Apex">
+    <h2>Apex</h2>
+    <div class="price">$100.00</div>
+    <a href="apex.html" class="view-btn">View</a>
+</div>
+```
+
+</section>
+
+<script>
+function showStore(type, button) {
+
+    document.getElementById('monthly-store').style.display =
+        type === 'monthly' ? 'grid' : 'none';
+
+    document.getElementById('lifetime-store').style.display =
+        type === 'lifetime' ? 'grid' : 'none';
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    button.classList.add('active');
+}
+</script>
 
 </body>
 </html>
