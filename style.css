@@ -249,6 +249,7 @@ body{
 }
 
 .purchase-btn{
+    display:block;
     width:100%;
     padding:18px;
     border:none;
@@ -257,6 +258,11 @@ body{
     color:white;
     font-weight:bold;
     cursor:pointer;
+
+    text-align:center;
+    text-decoration:none;
+    box-sizing:border-box;
+    margin:20px 0;
 }
 
 .purchase-btn:hover{
