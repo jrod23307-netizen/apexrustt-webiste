@@ -113,11 +113,12 @@ p{
 
 .store-grid {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
     flex-wrap: wrap;
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -218,7 +219,7 @@ p{
     display:block;
     margin:auto;
 }
-}
+
 
 .kit-perks{
     max-width:1400px;
