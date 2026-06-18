@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Rust Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<nav class="navbar">
+    <a href="index.html">
+        <img src="images/logo.png" alt="Apex Rust" class="nav-logo">
+    </a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="https://discord.gg/apexrust" target="_blank">Discord</a>
+    </div>
+</nav>
+
+<section class="store-header">
+    <h1>Apex Rust Store</h1>
+    <p>Select a kit package to view contents and benefits.</p>
+</section>
+
+<div class="store-tabs">
+    <button class="tab-btn active" onclick="showTab('monthly')">Monthly Kits</button>
+    <button class="tab-btn" onclick="showTab('lifetime')">Lifetime Kits</button>
+</div>
+
+<!-- MONTHLY -->
+
+<section id="monthly" class="store-grid">
+
+    <div class="store-card">
+        <img src="images/recruit-rank.png" alt="Recruit">
+        <h2>Recruit</h2>
+        <div class="price">$9/mo</div>
+        <a href="recruit-monthly" class="view-btn">View</a>
+    </div>
+
+    <div class="store-card">
+        <img src="images/scout-rank.png" alt="Scout">
+        <h2>Scout</h2>
+        <div class="price">$15/mo</div>
+        <a href="scout-monthly" class="view-btn">View</a>
+    </div>
+
+    <div class="store-card">
+        <img src="images/elite-rank.png" alt="Elite">
+        <h2>Elite</h2>
+        <div class="price">$25/mo</div>
+        <a href="elite-monthly" class="view-btn">View</a>
+    </div>
+
+    <div class="store-card">
+        <img src="images/apex-rank.png" alt="Apex">
+        <h2>Apex</h2>
+        <div class="price">$45/mo</div>
+        <a href="apex-monthly" class="view-btn">View</a>
+    </div>
+
+</section>
+
+<!-- LIFETIME -->
+
+<section id="lifetime" class="store-grid" style="display:none;">
+
+    <div class="store-card">
+        <img src="images/recruit-rank.png" alt="Recruit">
+        <h2>Recruit</h2>
+        <div class="price">$24.99</div>
+        <a href="recruit.html" class="view-btn">View</a>
+    </div>
+
+    <div class="store-card">
+        <img src="images/scout-rank.png" alt="Scout">
+        <h2>Scout</h2>
+        <div class="price">$49.99</div>
+        <a href="scout.html" class="view-btn">View</a>
+    </div>
+
+    <div class="store-card">
+        <img src="images/elite-rank.png" alt="Elite">
+        <h2>Elite</h2>
+        <div class="price">$74.99</div>
+        <a href="elite.html" class="view-btn">View</a>
+    </div>
+
+    <div class="store-card">
+        <img src="images/apex-rank.png" alt="Apex">
+        <h2>Apex</h2>
+        <div class="price">$100.00</div>
+        <a href="apex.html" class="view-btn">View</a>
+    </div>
+
+</section>
+
+<script>
+function showTab(tab) {
+
+    document.getElementById('monthly').style.display = 'none';
+    document.getElementById('lifetime').style.display = 'none';
+
+    document.getElementById(tab).style.display = 'flex';
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
