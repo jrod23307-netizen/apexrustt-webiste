@@ -43,13 +43,13 @@ transition:.3s;
 .nav-links a:hover
 
 .hero{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    padding-top:120px;
 }
 
 .logo{
