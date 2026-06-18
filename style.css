@@ -116,3 +116,10 @@ background:#1f2937;
     justify-content:center;
     width:100%;
 }
+
+.hero h1{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
