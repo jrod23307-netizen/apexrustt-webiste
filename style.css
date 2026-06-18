@@ -111,13 +111,13 @@ p{
     color:#bfc7dd;
 }
 
-.store-grid{
-    max-width:1400px;
-    margin:60px auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-    padding:0 40px;
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+    justify-content: center;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .store-card{
