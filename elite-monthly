@@ -1,1 +1,64 @@
-test
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Kit - Apex Rust</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<nav class="navbar">
+    <a href="index.html">
+        <img src="images/logo.png" alt="Apex Rust" class="nav-logo">
+    </a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="#">Discord</a>
+    </div>
+</nav>
+
+<section class="kit-page">
+
+    <div class="kit-sidebar">
+
+        <img src="images/elite-rank.png" alt="Elite Rank">
+
+        <h1>Elite</h1>
+
+        <div class="kit-price">$25/mo</div>
+
+        <button class="purchase-btn">
+            Purchase
+        </button>
+
+        <div class="sidebar-benefits">
+
+            <h3>Benefits</h3>
+
+            <ul>
+                <li>Furnace Splitting</li>
+                <li>/bgrade</li>
+                <li>$45 Shop Points Per Hour</li>
+                <li>4 Hour Kit Cooldown</li>
+                <li>1 Hour Wipe Cooldown</li>
+                <li>/skinbox</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="kit-content">
+        <img src="images/elite-items1.png" alt="Elite Kit" class="kit-preview">
+    </div>
+
+</section>
+
+
+</body>
+</html>
