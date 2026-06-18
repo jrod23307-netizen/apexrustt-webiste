@@ -112,12 +112,14 @@ p{
 }
 
 .store-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+    display: flex;
     justify-content: center;
+    align-items: flex-start;
     gap: 30px;
-    max-width: 1400px;
+    flex-wrap: wrap;
+    max-width: 1500px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .store-card{
@@ -134,7 +136,7 @@ p{
 
 .store-card img{
     width:100%;
-    max-width:250px;
+    max-width:320px;
 }
 
 .store-card h2{
