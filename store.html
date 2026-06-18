@@ -46,28 +46,28 @@
 
 
 <div class="store-card">
-    <img src="images/recruit-rank.png" alt="Recruit Monthly">
+    <img src="images/recruit-rank.png">
     <h2>Recruit</h2>
     <div class="price">$9.99/mo</div>
     <a href="recruit-monthly" class="view-btn">View</a>
 </div>
 
 <div class="store-card">
-    <img src="images/scout-rank.png" alt="Scout Monthly">
+    <img src="images/scout-rank.png">
     <h2>Scout</h2>
     <div class="price">$14.99/mo</div>
     <a href="scout-monthly" class="view-btn">View</a>
 </div>
 
 <div class="store-card">
-    <img src="images/elite-rank.png" alt="Elite Monthly">
+    <img src="images/elite-rank.png">
     <h2>Elite</h2>
     <div class="price">$19.99/mo</div>
     <a href="elite-monthly" class="view-btn">View</a>
 </div>
 
 <div class="store-card">
-    <img src="images/apex-rank.png" alt="Apex Monthly">
+    <img src="images/apex-rank.png">
     <h2>Apex</h2>
     <div class="price">$29.99/mo</div>
     <a href="apex-monthly" class="view-btn">View</a>
@@ -80,28 +80,28 @@
 
 
 <div class="store-card">
-    <img src="images/recruit-rank.png" alt="Recruit">
+    <img src="images/recruit-rank.png">
     <h2>Recruit</h2>
     <div class="price">$24.99</div>
     <a href="recruit.html" class="view-btn">View</a>
 </div>
 
 <div class="store-card">
-    <img src="images/scout-rank.png" alt="Scout">
+    <img src="images/scout-rank.png">
     <h2>Scout</h2>
     <div class="price">$49.99</div>
     <a href="scout.html" class="view-btn">View</a>
 </div>
 
 <div class="store-card">
-    <img src="images/elite-rank.png" alt="Elite">
+    <img src="images/elite-rank.png">
     <h2>Elite</h2>
     <div class="price">$74.99</div>
     <a href="elite.html" class="view-btn">View</a>
 </div>
 
 <div class="store-card">
-    <img src="images/apex-rank.png" alt="Apex">
+    <img src="images/apex-rank.png">
     <h2>Apex</h2>
     <div class="price">$100.00</div>
     <a href="apex.html" class="view-btn">View</a>
@@ -113,17 +113,17 @@
 <script>
 function showStore(type, button) {
 
-    document.getElementById('monthly-store').style.display =
-        type === 'monthly' ? 'grid' : 'none';
+    document.getElementById("monthly-store").style.display =
+        type === "monthly" ? "flex" : "none";
 
-    document.getElementById('lifetime-store').style.display =
-        type === 'lifetime' ? 'grid' : 'none';
+    document.getElementById("lifetime-store").style.display =
+        type === "lifetime" ? "flex" : "none";
 
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('active');
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.classList.remove("active");
     });
 
-    button.classList.add('active');
+    button.classList.add("active");
 }
 </script>
 
